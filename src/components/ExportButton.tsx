@@ -63,27 +63,27 @@ export const ExportButton: React.FC<ExportButtonProps> = ({ comments }) => {
   };
 
   return (
-    <div className="space-x-4 flex">
+    <div className="md:space-x-4 space-x-1 flex">
       <button
         onClick={exportToTxt}
-        className="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 flex items-center justify-center"
+        className="w-full bg-gray-700 hover:bg-gray-600 text-white font-medium md:py-2 px-1 md:px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 flex items-center justify-center md:text-lg text-xs"
       >
         <FileText size={16} className="inline-block mr-2" />
-        Export to TXT
+        Export TXT
       </button>
       <button
         onClick={exportToCsv}
-        className="w-full bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 flex items-center justify-center"
+        className="w-full bg-green-900 hover:bg-green-700 text-white font-medium py-1 md:py-2 px-1 md:px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 flex items-center justify-center md:text-lg text-xs"
       >
         <Sheet size={16} className="inline-block mr-2" />
-        Export to CSV
+        Export CSV
       </button>
       <button
         onClick={exportToJson}
-        className="w-full bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
+        className="w-full bg-blue-900 hover:bg-blue-700 text-white font-medium py-2 px-1 md:px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center md:text-lg text-xs"
       >
         <FileJson size={16} className="inline-block mr-2" />
-        Export to JSON
+        Export JSON
       </button>
     </div>
   );

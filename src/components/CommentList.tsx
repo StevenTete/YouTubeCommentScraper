@@ -18,18 +18,18 @@ export const CommentList: React.FC<CommentListProps> = ({ comments }) => {
   }
 
   return (
-<div className="mb-6 h-96 overflow-y-auto bg-gray-800 rounded-lg shadow-md fadeIn">
-  <div className="p-4 space-y-4">
+<div className="mb-6 md:max-h-96 max-h-56 h-auto overflow-y-auto bg-gray-800 rounded-lg shadow-md fadeIn">
+  <div className="md:p-4 p-2 md:space-y-4 space-y-2">
     {comments.map((comment) => (
-      <div key={comment.id} className="bg-gray-700 rounded-lg p-4 shadow-sm hover:bg-gray-600 cursor-pointer">
+      <div key={comment.id} className="bg-gray-700 rounded-lg md:p-4 p-2 shadow-sm hover:bg-gray-600 cursor-pointer">
         <div className="flex items-center mb-2">
-          <img className="w-10 h-10 rounded-full mr-3" src={comment.authorProfileImageUrl} alt="Avatar" />
+          <img className="md:size-10 size-7 rounded-full mr-3" src={comment.authorProfileImageUrl} alt="Avatar" />
           <div>
-            <p className="font-semibold text-gray-200">{comment.authorDisplayName}</p>
-            <p className="text-sm text-gray-400">{new Date(comment.publishedAt).toLocaleDateString()}</p>
+            <p className="font-semibold text-gray-200 md:text-lg text-xs">{comment.authorDisplayName}</p>
+            <p className="text-gray-400 md:text-sm text-xs">{new Date(comment.publishedAt).toLocaleDateString()}</p>
           </div>
         </div>
-        <p className="text-gray-300">{comment.textDisplay}</p>
+        <p className="text-gray-300 md:text-base text-xs">{comment.textDisplay}</p>
       </div>
     ))}
   </div>

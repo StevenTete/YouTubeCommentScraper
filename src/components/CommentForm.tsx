@@ -16,7 +16,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
 
   return (
 <form onSubmit={handleSubmit} className="mb-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-3 mb-4">
     <input
       type="text"
       value={videoId}
@@ -37,7 +37,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ onSubmit }) => {
   </div>
   <button
     type="submit"
-    className="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 flex items-center justify-center"
+    className="w-full bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-2 md:px-4 rounded transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-gray-500 flex items-center justify-center text-sm md:text-base"
   >
     <RefreshCcw size={16} className="inline-block mr-2" />
     Load Comments
