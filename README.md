@@ -34,9 +34,9 @@ This project is powered by:
 
 ## Screenshots
 
-![YouTube Comment Scraper](./Screenshots/Main.png)
-![YouTube Comment Scraper](./Screenshots/VideoID.png)
-![YouTube Comment Scraper](./Screenshots/CommentsLoaded.png)
+![YouTube Comment Scraper](./screenshots/Main.png)
+![YouTube Comment Scraper](./screenshots/VideoID.png)
+![YouTube Comment Scraper](./screenshots/CommentsLoaded.png)
 
 ## Installation
 
