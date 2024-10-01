@@ -4,6 +4,7 @@ import { CommentForm } from "./components/CommentForm";
 import { Pagination } from "./components/Pagination";
 import { ExportButton } from "./components/ExportButton";
 import { LoadingSpinner } from "./components/LoadingSpinner";
+import { Analytics } from "@vercel/analytics/react";
 
 // Interface for individual comment structure
 interface Comment {
@@ -187,6 +188,7 @@ export default function App() {
         <Pagination onLoadMore={handleLoadMore} hasMore={!!nextPageToken} />
         <ExportButton comments={comments} />
       </div>
+      <Analytics />
     </>
   );
 }
